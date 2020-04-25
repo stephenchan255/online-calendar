@@ -1,0 +1,225 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap";
+@import 'https://fonts.googleapis.com/css?family=Rubik:200,300,400,500,600,700,900&display=swap';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.content > .form {
+  margin-top: 30px;
+}
+
+.form {
+  max-width: 350px;
+  margin: auto;
+}
+.form input {
+  padding: 20px 10px;
+  margin-top: 1rem;
+}
+.form input[type=submit] {
+  padding: 15px;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.form small {
+  color: #6c757d;
+}
+.form .btn {
+  width: 100%;
+}
+
+.btn {
+  background: #4b6cc1;
+  color: white;
+}
+.btn.btn-danger {
+  background: #dc3545;
+}
+.btn.btn-secondary {
+  background: #6c757d;
+}
+
+.btn2 {
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.greeting-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.greeting-box .greeting-text {
+  margin: auto 10px;
+}
+
+.icons {
+  margin-bottom: 1rem;
+}
+.icons .status-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.icons .status-box .status {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+.user-guide-box span {
+  display: inline-block;
+  width: 70vw;
+  max-width: 350px;
+  text-decoration: underline;
+}
+.user-guide-box .user-guide {
+  width: 80vw;
+  max-width: 500px;
+}
+
+th.fc-day-header {
+  padding: 5px 0;
+}
+
+.fc-list-heading td {
+  font-weight: 500;
+}
+
+.time-picker-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.time-picker-box:first-child {
+  margin-bottom: 10px;
+}
+.time-picker-box label {
+  min-width: 100px;
+  margin: auto 0;
+}
+
+.checkbox-row {
+  margin: 1.5rem auto;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    padding-top: 10px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    padding: 0 10px;
+  }
+
+  .fc-toolbar.fc-header-toolbar {
+    font-size: 0.8rem;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-button {
+    padding: 5px;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-left {
+    display: flex;
+    flex-direction: row;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-center {
+    width: 100%;
+    text-align: center;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-center h2 {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-right {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fc-day-header {
+    font-size: 0.8rem;
+  }
+
+  .fc-day-grid-event .fc-time, .fc-day-grid-event .fc-title {
+    font-weight: 400;
+    font-size: 0.6rem;
+  }
+
+  .fc-list-table td {
+    padding: 5px 10px;
+  }
+
+  tr.fc-list-heading, tr.fc-list-item {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .fc-toolbar > * > :not(:first-child) {
+    margin-left: 0;
+  }
+
+  .fc-toolbar.fc-header-toolbar .fc-left {
+    flex-direction: column;
+  }
+  .fc-toolbar.fc-header-toolbar .fc-left .fc-today-button {
+    display: block;
+    width: 60px;
+  }
+
+  .fc-button-group:first-child {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .fc-toolbar.fc-header-toolbar .fc-right {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 801px) {
+  header {
+    padding-top: 30px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 0 60px;
+  }
+
+  .fc-day-grid-event .fc-time {
+    font-weight: 500;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
